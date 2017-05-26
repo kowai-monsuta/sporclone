@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<!--
+
+In this file, comments are used to identify different parts of the code by letter.
+The Sporclone Instructions file will refer to letters when describing the sequence of
+steps necessary to create a working Sporclone game. Complete the project according
+to the order of the NUMBERED instructions, not the order of the letters.
+
+DO NOT DELETE THE LETTER COMMENTS AFTER YOU COMPLETE STEPS!!!!!
+
+-->
+
+<html>
+<head>
+<!-- a. -->
+<title>Sporclone: Top Ten Movies of 2017</title>
+
+<!-- b. -->
+  <link rel="stylesheet" href="css/main.css">
+
+<!-- You may optionally style the table in your answers section here. -->
+<style>
+table {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+table span {
+    /* applies only to span tags within table */
+    border: 1px solid #AAAAAA;
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+}
+</style>
+
+<script>
+/*********** Game configuration ***********/
+
+// c.
+var answers = ["Alien Convenant", "Logan", "Guardians of the Galaxy 2", "Get Out", "John Wick Chapter 2", "Justice League", "Kong Skull Island", "Lego Batman Movie", "Pirates of the Caribbean Dead Men Tell No Tales", "Beauty and the Beast"];
+
+// d.
+var time_limit = 13; // in seconds
+
+</script>
+
+</head>
+
+
+<!-- e. -->
+<body onload="setup()">
+
+<header>
+    <h1>Sporclone</h1>
+</header>
+
+<div class="frame">
+
+    <section>
+
+        <aside>
+            <h3>More Games</h3>
+            <ul>
+            <!-- f. -->
+            <li><a href="#">Puzzle Name</a></li>
+            <li><a href="#">Puzzle Name</a></li>
+            </ul>
+        </aside>
+
+        <!-- g. -->
+        <img class="icon" src="img/icon.png" alt="quiz logo">
+
+        <!-- h. -->
+        <h2>Name the top ten movies of 2017</h2>
+
+    </section>
+
+    <section>
+
+        <div class="column">
+            <!-- i. -->
+            <input id="start" type="button" onclick="start()" value="PLAY GAME">
+        </div>
+
+        <div class="column">
+            <!-- j. -->
+            <h3>Enter peak name: Action</h3>
+
+            <!-- k.  -->
+            <input id="guess" type="text" onkeyup="check()">
+        </div>
+
+        <div class="column">
+            <h3>Score</h3>
+            <span id="score"></span>
+        </div>
+
+        <div class="column">
+            <h3>Time</h3>
+            <span id="time"></span>
+        </div>
+
+    </section>
+
+    <section>
+
+        <!-- l. -->
+        <table>
+        <tr>
+        <td><span id="answer0"></span></td>
+        <td><span id="answer1"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer2"></span></td>
+        <td><span id="answer3"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer4"></span></td>
+        <td><span id="answer5"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer6"></span></td>
+        <td><span id="answer7"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer8"></span></td>
+        <td><span id="answer9"></span></td>
+        </tr>
+        </table>
+
+    </section>
+
+    <footer>
+
+        <!-- m. -->
+        <p>Quiz by Melissa V.</p>
+
+    </footer>
+
+</div>
+
+<!-- n. -->
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <script src="js/sporclone.js"></script>
+
+</body>
+</html>
